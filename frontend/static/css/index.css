@@ -1,11 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Koulen", cursive;
+  font-family: 'Koulen', cursive;
   margin: 0;
   padding: 0;
 }
@@ -15,5 +15,24 @@ p {
 }
 
 * {
-  box-sizing: border-box;
-}/*# sourceMappingURL=index.css.map */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bigFlag {
+  height: 30rem;
+  margin: 2rem 1rem;
+  border: 2px solid #404040;
+  border-radius: .5rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=index.css.map */

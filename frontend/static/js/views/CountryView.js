@@ -8,6 +8,8 @@ export default class extends AbstractView{
 
     async getHTML() {
         console.log(this.params.id);
-        return "<h1>Country!!!!</h1>";
+        return `
+        <h1>Country!!!!</h1> 
+        `;
     }
 }
