@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+}
+
+.searchbarnfilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 10px;
+}
+
+.country-infos{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+
+.flagninfo{
+    box-shadow: 10px;
+}
