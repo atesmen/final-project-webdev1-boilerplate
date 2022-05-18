@@ -24,6 +24,143 @@ body {
   color: white;
 }
 
+.bigFlag {
+  height: 30rem;
+  margin: 2rem 1rem;
+  border: 2px solid #404040;
+  border-radius: .5rem;
+}
+
+.countryTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.countryInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.countryInfo-Left {
+  width: 15rem;
+}
+
+.countryInfo-Right {
+  width: 15rem;
+}
+
+.countryInfo-nn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-pop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-sreg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-cap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-tld {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-cur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countryInfo-lan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bordercountry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .5rem;
+}
+
+.bordercountry-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bordercountry button {
+  padding: .8rem 4rem;
+}
+
+.goback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.goback button {
+  font-family: 'Koulen', cursive;
+  padding: .8rem 4rem;
+  font-size: 28px;
+}
+
+@media (max-width: 426px) {
+  .countryInfo {
 img {
   width: 100%;
 }
@@ -90,6 +227,11 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .bigFlag {
+    height: 10rem;
+  }
+  .bordercountry-container {
     gap: 15px;
   }
   .searchbar {
