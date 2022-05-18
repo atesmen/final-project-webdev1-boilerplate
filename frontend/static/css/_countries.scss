@@ -1,0 +1,82 @@
+body{
+    background-color: #282828;
+    color: white;
+}
+
+.flags{
+    width: 100%;
+}
+
+.searchbarnfilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 10px;
+}
+
+.country-infos{
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    
+    
+    
+}
+
+.flagninfo{
+    background-color: #404040;
+    border-radius: 10px;
+   
+}
+
+.info{
+    padding-left: 10px;
+}
+
+.searchbar{
+    background-color: #c4c4c4;
+    border: none;
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 15px;
+    outline: none;
+
+}
+
+.filter{
+    border-radius: 15px;
+    background-color: #c4c4c4;
+    padding-left: 5px;
+    outline: none;
+    width: 100px;
+}
+
+@media screen and (max-width: 426px) {
+    .searchbarnfilter {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searchbar{
+        width: 80%;
+        align-self: center;
+    }
+
+    .filter{
+        width: 100px;
+        align-self: center;
+    }
+
+    .country-infos{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flagninfo{
+        width: 80%;
+        align-self: center;
+    }
+}
