@@ -19,7 +19,8 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 15px;
+    
     
     
 }
@@ -27,6 +28,7 @@ img{
 .flagninfo{
     background-color: #404040;
     border-radius: 10px;
+   
 }
 
 .info{
@@ -40,5 +42,41 @@ img{
     height: 30px;
     padding-left: 10px;
     border-radius: 15px;
+    outline: none;
 
+}
+
+.filter{
+    border-radius: 15px;
+    background-color: #c4c4c4;
+    padding-left: 5px;
+    outline: none;
+    width: 100px;
+}
+
+@media screen and (max-width: 426px) {
+    .searchbarnfilter {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searchbar{
+        width: 80%;
+        align-self: center;
+    }
+
+    .filter{
+        width: 100px;
+        align-self: center;
+    }
+
+    .country-infos{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flagninfo{
+        width: 80%;
+        align-self: center;
+    }
 }

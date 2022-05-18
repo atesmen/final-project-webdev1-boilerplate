@@ -54,7 +54,7 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  gap: 10px;
+  gap: 15px;
 }
 
 .flagninfo {
@@ -73,5 +73,49 @@ img {
   height: 30px;
   padding-left: 10px;
   border-radius: 15px;
+  outline: none;
+}
+
+.filter {
+  border-radius: 15px;
+  background-color: #c4c4c4;
+  padding-left: 5px;
+  outline: none;
+  width: 100px;
+}
+
+@media screen and (max-width: 426px) {
+  .searchbarnfilter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  .searchbar {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .filter {
+    width: 100px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .country-infos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .flagninfo {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */

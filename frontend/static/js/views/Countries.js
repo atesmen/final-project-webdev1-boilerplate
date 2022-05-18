@@ -10,8 +10,15 @@ export default class extends AbstractView{
         return `
         <div class="searchbarnfilter">
             <input class="searchbar" type="search" id="searchbar" name="searchbar" placeholder="Explore the World">
-            <select name="filter" id="filter">
+            <select class="filter" name="filter" id="filter">
                 <option value="Region">Region</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="South America">South America</option>
+                <option value="North America">North America</option>
+                <option value="Africa">Africa</option>
+                <option value="Antartica">Antartica</option>
+                <option value="Oceania">Oceania</option>
             </select>    
         </div>    
         
@@ -28,7 +35,7 @@ export default class extends AbstractView{
                 <div class="flagninfo">
                     <img src="static/css/Turkey.png" alt="tr" />
                     <div class="info">
-                        <h3>Turkey</h3>
+                        <h1>Turkey</h1>
                         <h4>Population</h4>
                         <h4>Region</h4>
                         <h4>Capital</h4>
@@ -37,7 +44,7 @@ export default class extends AbstractView{
                 <div class="flagninfo">
                     <img src="static/css/Turkey.png" alt="tr" />
                     <div class="info">
-                        <h3>Turkey</h3>
+                        <h1>Turkey</h1>
                         <h4>Population</h4>
                         <h4>Region</h4>
                         <h4>Capital</h4>
@@ -46,7 +53,7 @@ export default class extends AbstractView{
                 <div class="flagninfo">
                     <img src="static/css/Turkey.png" alt="tr" />
                     <div class="info">
-                        <h3>Turkey</h3>
+                        <h1>Turkey</h1>
                         <h4>Population</h4>
                         <h4>Region</h4>
                         <h4>Capital</h4>
@@ -59,7 +66,7 @@ export default class extends AbstractView{
         <div class="flagninfo">
             <img src="static/css/Turkey.png" alt="tr" />
             <div class="info">
-                <h3>Turkey</h3>
+                <h1>Turkey</h1>
                 <h4>Population</h4>
                 <h4>Region</h4>
                 <h4>Capital</h4>
@@ -68,7 +75,7 @@ export default class extends AbstractView{
         <div class="flagninfo">
             <img src="static/css/Turkey.png" alt="tr" />
             <div class="info">
-                <h3>Turkey</h3>
+                <h1>Turkey</h1>
                 <h4>Population</h4>
                 <h4>Region</h4>
                 <h4>Capital</h4>
@@ -77,7 +84,7 @@ export default class extends AbstractView{
         <div class="flagninfo">
             <img src="static/css/Turkey.png" alt="tr" />
             <div class="info">
-                <h3>Turkey</h3>
+                <h1>Turkey</h1>
                 <h4>Population</h4>
                 <h4>Region</h4>
                 <h4>Capital</h4>
@@ -86,7 +93,7 @@ export default class extends AbstractView{
         <div class="flagninfo">
             <img src="static/css/Turkey.png" alt="tr" />
             <div class="info">
-                <h3>Turkey</h3>
+                <h1>Turkey</h1>
                 <h4>Population</h4>
                 <h4>Region</h4>
                 <h4>Capital</h4>
@@ -99,7 +106,7 @@ export default class extends AbstractView{
     <div class="flagninfo">
         <img src="static/css/Turkey.png" alt="tr" />
         <div class="info">
-            <h3>Turkey</h3>
+            <h1>Turkey</h1>
             <h4>Population</h4>
             <h4>Region</h4>
             <h4>Capital</h4>
@@ -108,7 +115,7 @@ export default class extends AbstractView{
     <div class="flagninfo">
         <img src="static/css/Turkey.png" alt="tr" />
         <div class="info">
-            <h3>Turkey</h3>
+            <h1>Turkey</h1>
             <h4>Population</h4>
             <h4>Region</h4>
             <h4>Capital</h4>
@@ -117,7 +124,7 @@ export default class extends AbstractView{
     <div class="flagninfo">
         <img src="static/css/Turkey.png" alt="tr" />
         <div class="info">
-            <h3>Turkey</h3>
+            <h1>Turkey</h1>
             <h4>Population</h4>
             <h4>Region</h4>
             <h4>Capital</h4>
@@ -126,7 +133,7 @@ export default class extends AbstractView{
     <div class="flagninfo">
         <img src="static/css/Turkey.png" alt="tr" />
         <div class="info">
-            <h3>Turkey</h3>
+            <h1>Turkey</h1>
             <h4>Population</h4>
             <h4>Region</h4>
             <h4>Capital</h4>
