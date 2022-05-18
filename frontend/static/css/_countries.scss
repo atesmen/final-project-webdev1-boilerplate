@@ -1,3 +1,8 @@
+body{
+    background-color: #282828;
+    color: white;
+}
+
 img{
     width: 100%;
 }
@@ -10,14 +15,30 @@ img{
 }
 
 .country-infos{
-    margin: 20px 10px;
+    margin: 40px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 10px;
     
+    
 }
 
 .flagninfo{
-    box-shadow: 10px;
+    background-color: #404040;
+    border-radius: 10px;
+}
+
+.info{
+    padding-left: 10px;
+}
+
+.searchbar{
+    background-color: #c4c4c4;
+    border: none;
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 15px;
+
 }
