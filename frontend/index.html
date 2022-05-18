@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-    <nav>
+    <nav class="header">
         <h1>Worldpedia</h1>
-        <ul>
+        <div class="toggle" id="menu-toggler">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </div>
+        <ul id="main-menu">
             <li>
                 <a href="/" class="nav__link" data-link>Home</a>
             </li>
@@ -23,6 +28,11 @@
         </ul>
     </nav>
     <div id="app"></div>
+    <footer>
+        <p>
+            Final Project Webdev I - Cornerstone International College | Emir, Ozan and Maurício.
+        </p>
+    </footer>
     <script type="module" src="/static/js/countries.js"></script>
     <script type="module" src="/static/js/router.js"></script>
     <script type="module" src="/static/js/index.js"></script>
