@@ -82,9 +82,14 @@ body {
 @media  (max-width:426px){
     .countryInfo{
         flex-direction: column;
-    }
-    .bigFlag {
-        height: 10rem;
+        max-width: 100%;
+        margin: .5rem;
+        &-Left {
+           max-width: 100%;
+        }
+        &-Right {
+            max-width: 100%;
+        }
     }
     .bordercountry-container {
         flex-direction: column;

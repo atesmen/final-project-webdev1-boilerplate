@@ -381,9 +381,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
+    margin: .5rem;
   }
-  .bigFlag {
-    height: 10rem;
+  .countryInfo-Left {
+    max-width: 100%;
+  }
+  .countryInfo-Right {
+    max-width: 100%;
   }
   .bordercountry-container {
     -webkit-box-orient: vertical;
