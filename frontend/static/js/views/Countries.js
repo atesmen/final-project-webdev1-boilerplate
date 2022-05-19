@@ -1,9 +1,42 @@
+
+import { getCountries } from "../countries.js";
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView{
     constructor(params) {
         super(params);
         this.setTitle("Countries");
+        
+        console.log(getCountries())
+         let findCountries = getCountries()
+         this.countryNInfo = ""
+        for(let i = 0; i < findCountries.length; i++){
+            const country = findCountries[i];
+            const countryHtml = `
+                <div class="flagninfo">
+                    <img class="flags" src="${country.flags.png}" alt="tr" />
+                    <div class="info">
+                        <h1 class="info-h1">${country.name.common}</h1>
+                        <div class="country-info">
+                        <h4>Population :</h4>
+                        <p class="country-info-p">${country.population}<p>
+                        </div>
+                        <div class="country-info">
+                        <h4>Region :</h4>
+                        <p class="country-info-p">${country.region}<p>
+                        </div>
+                        <div class="country-info">
+                        <h4>Capital :</h4>
+                        <p class="country-info-p">${country.capital}<p>
+                        </div>
+                    </div>
+                </div>
+            
+            `;
+            this.countryNInfo += countryHtml;
+            // country += country.name.common
+            
+        }
     }
 
     async getHTML() {
@@ -22,130 +55,10 @@ export default class extends AbstractView{
             </select>    
         </div>    
         
-        <div class="country-infos">
-                <div class="flagninfo">
-                    <img src="static/css/Turkey.png" alt="tr" />
-                    <div class="info">
-                        <h1>Turkey</h1>
-                        <h4>Population</h4>
-                        <h4>Region</h4>
-                        <h4>Capital</h4>
-                    </div>
-                </div>
-                <div class="flagninfo">
-                    <img src="static/css/Turkey.png" alt="tr" />
-                    <div class="info">
-                        <h1>Turkey</h1>
-                        <h4>Population</h4>
-                        <h4>Region</h4>
-                        <h4>Capital</h4>
-                    </div>
-                </div>
-                <div class="flagninfo">
-                    <img src="static/css/Turkey.png" alt="tr" />
-                    <div class="info">
-                        <h1>Turkey</h1>
-                        <h4>Population</h4>
-                        <h4>Region</h4>
-                        <h4>Capital</h4>
-                    </div>
-                </div>
-                <div class="flagninfo">
-                    <img src="static/css/Turkey.png" alt="tr" />
-                    <div class="info">
-                        <h1>Turkey</h1>
-                        <h4>Population</h4>
-                        <h4>Region</h4>
-                        <h4>Capital</h4>
-                    </div>
-                </div>
-            
-
+         <div class="country-infos">
+            ${this.countryNInfo}
         </div>
-        <div class="country-infos">
-        <div class="flagninfo">
-            <img class="flags"src="static/css/Turkey.png" alt="tr" />
-            <div class="info">
-                <h1>Turkey</h1>
-                <h4>Population</h4>
-                <h4>Region</h4>
-                <h4>Capital</h4>
-            </div>
-        </div>
-        <div class="flagninfo">
-            <img class="flags" src="static/css/Turkey.png" alt="tr" />
-            <div class="info">
-                <h1>Turkey</h1>
-                <h4>Population</h4>
-                <h4>Region</h4>
-                <h4>Capital</h4>
-            </div>
-        </div>
-        <div class="flagninfo">
-            <img class="flags" src="static/css/Turkey.png" alt="tr" />
-            <div class="info">
-                <h1>Turkey</h1>
-                <h4>Population</h4>
-                <h4>Region</h4>
-                <h4>Capital</h4>
-            </div>
-        </div>
-        <div class="flagninfo">
-            <img class="flags" src="static/css/Turkey.png" alt="tr" />
-            <div class="info">
-                <h1>Turkey</h1>
-                <h4>Population</h4>
-                <h4>Region</h4>
-                <h4>Capital</h4>
-            </div>
-        </div>
-    
-
-    </div>
-    <div class="country-infos">
-    <div class="flagninfo">
-        <img class="flags" src="static/css/Turkey.png" alt="tr" />
-        <div class="info">
-            <h1>Turkey</h1>
-            <h4>Population</h4>
-            <h4>Region</h4>
-            <h4>Capital</h4>
-        </div>
-    </div>
-    <div class="flagninfo">
-        <img class="flags" src="static/css/Turkey.png" alt="tr" />
-        <div class="info">
-            <h1>Turkey</h1>
-            <h4>Population</h4>
-            <h4>Region</h4>
-            <h4>Capital</h4>
-        </div>
-    </div>
-    <div class="flagninfo">
-        <img class="flags" src="static/css/Turkey.png" alt="tr" />
-        <div class="info">
-            <h1>Turkey</h1>
-            <h4>Population</h4>
-            <h4>Region</h4>
-            <h4>Capital</h4>
-        </div>
-    </div>
-    <div class="flagninfo">
-        <img class="flags" src="static/css/Turkey.png" alt="tr" />
-        <div class="info">
-            <h1>Turkey</h1>
-            <h4>Population</h4>
-            <h4>Region</h4>
-            <h4>Capital</h4>
-        </div>
-    </div>
-
-
-    </div>
-        `
-            
-        
-
-        ;
-    }
+        `;
+    } 
 }
+
