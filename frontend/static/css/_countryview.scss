@@ -22,6 +22,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem;
+     h3 {
+        padding: .2rem;
+     }
     &-Left {
         width: 35rem;
     }
