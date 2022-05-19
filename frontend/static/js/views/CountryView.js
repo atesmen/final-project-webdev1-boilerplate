@@ -1,4 +1,4 @@
-import { getBorders, getCountryByCode } from "../countries.js";
+import { getBorders, getCountryByCode, numberWithCommas } from "../countries.js";
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView{
@@ -19,7 +19,7 @@ export default class extends AbstractView{
         <div class="countryInfo-Left">
             <div class="countryInfo-nn"><h3>Native Name :</h3> <h3 id="nN">${Object.entries(country.name.nativeName)[0][1].official}
             </h3></div>
-            <div class="countryInfo-pop"><h3>Population :</h3> <h3 id="pop"> ${country.population}</h3></div>
+            <div class="countryInfo-pop"><h3>Population :</h3> <h3 id="pop"> ${numberWithCommas(country.population)}</h3></div>
             <div class="countryInfo-reg"><h3>Region :</h3> <h3 id="reg"> ${country.region}</h3></div>
             <div class="countryInfo-sreg"><h3>Subregion :</h3> <h3 id="sreg"> ${country.subregion}</h3></div>   
         </div>
