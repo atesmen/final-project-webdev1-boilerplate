@@ -1,5 +1,5 @@
 
-import { getCountries } from "../countries.js";
+import { getCountries, numberWithCommas } from "../countries.js";
 import AbstractView from "./AbstractView.js";
 
 export default class extends AbstractView{
@@ -20,7 +20,8 @@ export default class extends AbstractView{
                         <h1 class="info-h1">${country.name.common}</h1>
                         <div class="country-info">
                         <h4>Population :</h4>
-                        <p class="country-info-p">${country.population}<p>
+                        <p class="country-info-p">${numberWithCommas(country.population
+                            )}<p>
                         </div>
                         <div class="country-info">
                         <h4>Region :</h4>
