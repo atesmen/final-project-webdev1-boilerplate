@@ -14,6 +14,7 @@ export default class extends AbstractView{
             const country = findCountries[i];
             const countryHtml = `
                 <div class="flagninfo">
+                    <a href="/countries/${country.cca3}">
                     <img class="flags" src="${country.flags.png}" alt="tr" />
                     <div class="info">
                         <h1 class="info-h1">${country.name.common}</h1>
@@ -30,6 +31,7 @@ export default class extends AbstractView{
                         <p class="country-info-p">${country.capital}<p>
                         </div>
                     </div>
+                    </a>    
                 </div>
             
             `;
