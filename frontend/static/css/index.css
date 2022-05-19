@@ -238,10 +238,13 @@ body {
 }
 
 .bigFlag {
-  height: 30rem;
   margin: 2rem 1rem;
   border: 2px solid #404040;
   border-radius: .5rem;
+}
+
+.bigFlag img {
+  width: 100%;
 }
 
 .countryTitle {
@@ -269,11 +272,11 @@ body {
 }
 
 .countryInfo-Left {
-  width: 15rem;
+  width: 35rem;
 }
 
 .countryInfo-Right {
-  width: 15rem;
+  width: 35rem;
 }
 
 .countryInfo-nn {
