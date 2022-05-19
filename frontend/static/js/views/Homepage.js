@@ -4,11 +4,6 @@ export default class extends AbstractView{
     constructor(params) {
         super(params);
         this.setTitle("Homepage");
-        const togglerEl = document.querySelector('#menu-toggler');
-        const menuEl = document.querySelector('#main-menu');
-        togglerEl.addEventListener('click', function(event) {
-            menuEl.classList.toggle('expanded');
-        });
     }
 
     async getHTML() {
