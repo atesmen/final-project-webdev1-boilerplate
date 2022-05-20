@@ -102,12 +102,16 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     display: none;
+    padding-top: 16px;
   }
   .header ul li {
     width: 100%;
-    font-size: 1.5rem;
     text-align: center;
     padding: 16px 0;
+    border-top: 1px solid white;
+  }
+  .header ul li a {
+    font-size: 1.5rem;
   }
   .header ul.expanded {
     display: flex;
