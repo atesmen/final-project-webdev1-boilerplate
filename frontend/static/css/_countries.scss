@@ -72,9 +72,8 @@ body{
 .filter{
     border-radius: 15px;
     background-color: #c4c4c4;
-    padding-left: 5px;
+    padding: 0 8px;
     outline: none;
-    width: 100px;
 }
 
 @media screen and (max-width: 426px) {
@@ -89,7 +88,6 @@ body{
     }
 
     .filter{
-        width: 100px;
         align-self: center;
     }
 

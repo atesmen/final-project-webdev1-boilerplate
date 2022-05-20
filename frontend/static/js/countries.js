@@ -42,3 +42,10 @@ export function numberWithCommas(x) {
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     return parts.join(".");
 }
+
+export function filterCountriesByRegion(region) {
+    if (!region) {
+        return getCountries();
+    }
+    return getCountries().filter((c) => c.region.toLowerCase() === region.toLowerCase());
+}
