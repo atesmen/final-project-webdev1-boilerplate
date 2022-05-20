@@ -94,7 +94,7 @@ footer p {
   color: var(--footer-font-color);
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .header {
     flex-direction: column;
   }
